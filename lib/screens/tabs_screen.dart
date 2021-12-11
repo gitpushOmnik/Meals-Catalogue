@@ -18,6 +18,7 @@ class _TabsScreenState extends State<TabsScreen> {
   List<Map<String, Object>> _pages = [];
   int _selectedPageIndex = 0;
 
+  //Initialize the tabs before the page loads
   @override
   void initState() {
     _pages = [
@@ -33,6 +34,7 @@ class _TabsScreenState extends State<TabsScreen> {
     super.initState();
   }
 
+  //Select the page index
   void _selectPage(int index) {
     setState(() {
       _selectedPageIndex = index;
